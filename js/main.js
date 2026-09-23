@@ -64,7 +64,10 @@ function MainModule(listingsID = "#listings") {
     const amenities = parseAmenities(listing.amenities);
     const topAmenities = amenities.slice(0, 5);
     const isSelected = selectedIds.has(listing.id);
- 
+
+    /* Something seems to be wrong with the onerror attribute. When I view it in a browser
+       the card seems to be moving up and down in a glitchy way. I think it has to do with
+       the placeholder for img. */
     return `<div class="col-4">
   <div class="listing card ${isSelected ? "is-comparing" : ""}" data-id="${listing.id}">
     <img
