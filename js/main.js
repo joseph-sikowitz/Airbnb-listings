@@ -91,7 +91,9 @@ function MainModule(listingsID = "#listings") {
       <div class="price-tag">${formatPrice(listing.price)} / night</div>
  
       <p class="card-text">${escapeHTML(truncate(listing.description, 140))}</p>
- 
+
+     /* I like how you made badges for the amenities. It really distinguishes them from the other content.
+        I also like how you limited them to 5. I listed them all and for some listings that was a lot. */
       <div class="amenities mb-2">
         ${topAmenities
           .map(
