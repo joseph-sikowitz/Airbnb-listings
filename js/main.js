@@ -15,7 +15,8 @@ function MainModule(listingsID = "#listings") {
   // holds the currently loaded listings and which ones are selected to compare
   let allListings = [];
   const selectedIds = new Set();
- 
+
+  <!-- You were very thorough with the way you escaped and parsed the data -->
   // basic escaping since we're building HTML with template strings from
   // fields that come straight out of the dataset
   function escapeHTML(str) {
